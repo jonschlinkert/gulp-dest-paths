@@ -254,7 +254,6 @@ describe('dest values', function () {
     var i = 0;
     stream.on('data', function (file) {
       file.data.dest.base.should.be.a.string;
-      console.log(file.data)
       i++;
     });
 
@@ -276,7 +275,6 @@ describe('dest values', function () {
     var i = 0;
     stream.on('data', function (file) {
       file.data.dest.relative.should.be.a.string;
-      console.log(file.data)
       i++;
     });
 
@@ -298,7 +296,6 @@ describe('dest values', function () {
     var i = 0;
     stream.on('data', function (file) {
       file.data.dest.extname.should.be.a.string;
-      console.log(file.data)
       i++;
     });
 
@@ -320,7 +317,6 @@ describe('dest values', function () {
     var i = 0;
     stream.on('data', function (file) {
       file.data.dest.basename.should.be.a.string;
-      console.log(file.data)
       i++;
     });
 
@@ -342,7 +338,6 @@ describe('dest values', function () {
     var i = 0;
     stream.on('data', function (file) {
       file.data.dest.filename.should.be.a.string;
-      console.log(file.data)
       i++;
     });
 
@@ -364,7 +359,6 @@ describe('dest values', function () {
     var i = 0;
     stream.on('data', function (file) {
       file.data.dest.path.should.be.a.string;
-      console.log(file.data)
       i++;
     });
 
@@ -387,7 +381,6 @@ describe('dest values', function () {
     var i = 0;
     stream.on('data', function (file) {
       file.data.dest.__filename.should.be.a.string;
-      console.log(file.data)
       i++;
     });
 
@@ -409,7 +402,6 @@ describe('dest values', function () {
     var i = 0;
     stream.on('data', function (file) {
       file.data.dest.__dirname.should.be.a.string;
-      console.log(file.data)
       i++;
     });
 

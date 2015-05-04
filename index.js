@@ -3,7 +3,6 @@
 var path = require('path');
 var through = require('through2');
 var PluginError = require('plugin-error');
-var extname = require('gulp-extname');
 
 /**
  * Extend the `file.data` object with `dest` properties
@@ -11,8 +10,7 @@ var extname = require('gulp-extname');
  */
 
 module.exports = function destPlugin(options) {
-  var stream = extname(options)
-  stream.pipe(through.obj(function (file, enc, cb) {
+  return through.obj(function (file, enc, cb) {
     if (file.isNull()) {
       this.push(file);
       return cb();
@@ -54,7 +52,5 @@ module.exports = function destPlugin(options) {
       this.emit('error', new PluginError('template-dest', err));
       return cb();
     }
-  }));
-
-  return stream;
+  });
 };
