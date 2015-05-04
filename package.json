@@ -1,0 +1,56 @@
+{
+  "name": "gulp-dest-paths",
+  "description": "Adds destination-related properties to the `file.data.dest` object on vinyl files.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/gulp-dest-paths",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/gulp-dest-paths.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/gulp-dest-paths/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/gulp-dest-paths/blob/master/LICENSE"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "plugin-error": "^0.1.1",
+    "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "vinyl": "^0.4.6"
+  },
+  "keywords": [
+    "assemble",
+    "basename",
+    "dest",
+    "dirname",
+    "file",
+    "filepath",
+    "gulp",
+    "gulpplugin",
+    "path",
+    "paths",
+    "plugin",
+    "template",
+    "verb",
+    "vinyl"
+  ]
+}
