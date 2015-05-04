@@ -1,7 +1,7 @@
 {
   "name": "gulp-dest-paths",
   "description": "Adds destination-related properties to the `file.data.dest` object on vinyl files.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/jonschlinkert/gulp-dest-paths",
   "author": {
     "name": "Jon Schlinkert",
